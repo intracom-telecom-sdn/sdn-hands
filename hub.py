@@ -23,7 +23,7 @@ class HubComponent(object):
 		core.openflow.addListeners(self)
 	
 	def _handle_ConnectionUp(self, event):
-		log.info("Creating hub device on %s" % (event.connection,))
+		log.info("Creating hub device on %s", event.connection)
 		
 		# Create a new Hub on the device having this connection
 		Hub(event.connection)
