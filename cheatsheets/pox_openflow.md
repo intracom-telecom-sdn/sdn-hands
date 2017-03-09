@@ -27,7 +27,7 @@ class ofp_flow_mod (ofp_header):
 
 
 ```python
-my_flow_mod = of.ofl_flow_mod()
+my_flow_mod = of.ofp_flow_mod()
 
 # modify the fields as needed
 my_flow_mod.match = my_match
@@ -68,7 +68,7 @@ class ofp_action_output(object):
 ## Output back to the input port
 
 ```python
-my_action = ofp_action_output()
+my_action = of.ofp_action_output()
 my_action.port = of.OFPP_IN_PORT
 ```
 
